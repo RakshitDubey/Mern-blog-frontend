@@ -20,7 +20,7 @@ function Login() {
     e.preventDefault()
    
     try {
-      const res=await axios.post(url+'/api/auth/login',{email,password},{withCredentials:true})
+      const res=await axios.post(url+'/api/auth/login',{email,password})
 
       // console.log("Login Successfull");
       setuser(res.data)
