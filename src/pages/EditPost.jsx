@@ -55,7 +55,7 @@ const navigate=useNavigate()
       }
     }
     try {
-      const res=await axios.put(url+'/api/posts/'+postId,post,{withCredentials:true})
+      const res=await axios.put(url+'/api/posts/'+postId,post)
       navigate('/')
       console.log(res.data);
 
