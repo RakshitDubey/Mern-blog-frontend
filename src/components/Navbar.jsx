@@ -21,7 +21,7 @@ function Navbar() {
   const{setuser}=useContext(UserContext)
   const handlelogout=async()=>{
     try {
-      const res=await axios.get(url+'/api/auth/logout',{withCredentials:true})
+      const res=await axios.get(url+'/api/auth/logout')
       console.log(res);
       setuser(null)
       toast.success("Logout")
